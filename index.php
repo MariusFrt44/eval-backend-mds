@@ -18,11 +18,11 @@
     <?php if(!empty($message)) : ?>
       <p><?php echo $message; ?></p>
     <?php endif; ?>
-    <form action="<?php echo htmlspecialchars($_SERVER['REQUEST_URI'], ENT_QUOTES); ?>" method="post">
-      <fieldset>
+    <form action="<?php echo htmlspecialchars($_SERVER['REQUEST_URI'], ENT_QUOTES); ?>" method="get"> <!-- initialisation du formulaire -->
+      <fieldset> 
         <legend>Formulaire de base</legend>
           <p>
-             <label for="Prénom">Prénom :</label> 
+             <label for="Prénom">Prénom :</label> <!-- Mettre le prénom dans la case du formulaire -->
            <input type="Prénom" name="Prénom" id="Prénom" value="" /> 
           </p>
           <p>
@@ -41,9 +41,15 @@
                               <p>
             <label for="phone">téléphone :</label> 
             <input type="phone" name="phone" id="phone" value="" /> 
-            <input type="submit" name="submit" value="Envoyer" />
           </p>
-      </fieldset>
-    </form>
+          <p>
+            <input type="submit" name="submit" value="Envoyer" /> <!-- On envoie le formulaire -->
+            </p>
+      </fieldset> 
+    </form> <!-- fin du formulaire -->
   </body>
 </html>
+
+<!-- Si je n'avais pas perdu de temps pour la mise en place du serveur, 
+j'aurai surement fait beaucoup plus de choses... Je n'ai pas eu le temps 
+de comprendre à quoi servait exactement toutes les fonctions...  -->
