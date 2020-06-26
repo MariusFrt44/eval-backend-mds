@@ -23,7 +23,7 @@
         <legend>Formulaire de base</legend>
           <p>
              <label for="Prénom">Prénom :</label> <!-- Mettre le prénom dans la case du formulaire -->
-           <input type="Prénom" name="Prénom" id="Prénom" value="" /> 
+           <input type="Prénom" name="Prénom" id="Prénom" value="" /> <!-- On indique les fonctions -->
           </p>
           <p>
             <label for="Nom">Nom :</label> 
